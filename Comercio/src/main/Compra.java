@@ -1,4 +1,4 @@
-package br.gov.serpro.comercio;
+package main;
 public class Compra {
 	public static void main(String[] args){
 
