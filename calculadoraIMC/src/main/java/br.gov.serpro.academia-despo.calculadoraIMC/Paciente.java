@@ -1,4 +1,4 @@
-package br.gov.serpro.calculadoraIMC;
+package br.gov.serpro.academia-despo.calculadoraIMC;
 
 public class Paciente {
 	private double peso;
