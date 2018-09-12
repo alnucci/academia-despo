@@ -3,8 +3,10 @@ package src.br.gov.serpro.pontuacao;
 import br.gov.serpro.pontuacao.CalculadoraBonus;
 import br.gov.serpro.pontuacao.RegistroPontos;
 import br.gov.serpro.pontuacao.Usuario;
-
+import org.junit.Test;
 import static org.junit.Assert.*;
+
+// import static org.junit.Assert.*;
 
 public class TesteRegistroPontos {
     @Test
@@ -14,7 +16,8 @@ public class TesteRegistroPontos {
         br.gov.serpro.pontuacao.CalculadoraBonus cb = new CalculadoraBonus();
         br.gov.serpro.pontuacao.RegistroPontos rp = new RegistroPontos();
         rp.criarUmTopico(u);
-        assertEquals(u.pontos, 5);
+        org.junit.Assert.assertEquals(u.pontos, 5);
+
     }
     @Test
     public void pontosCriarTopicosVIP(){
