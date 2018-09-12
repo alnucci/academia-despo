@@ -42,7 +42,7 @@ public class TesteRegistroPontos {
     public void pontosCriarTopicosVIPBonusdoDia(){
         br.gov.serpro.pontuacao.Usuario u = new Usuario();
         u.nome = "Guerra";
-        u.vip - true;
+        u.vip = true;
         br.gov.serpro.pontuacao.CalculadoraBonus cb = new CalculadoraBonus();
         cb.bonusDoDia = 2;
         br.gov.serpro.pontuacao.RegistroPontos rp = new RegistroPontos();
