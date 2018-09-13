@@ -1,0 +1,7 @@
+
+Rsquid:S1854"6Remove this useless assignment to local variable "cb".(¢µ¤Åıÿÿÿÿ
+Csquid:S1481"'Remove this unused "cb" local variable.(¢µ¤Åıÿÿÿÿ
+^squid:S1192"GDefine a constant instead of duplicating this literal "Guerra" 4 times.(ÚŠÜ
+Rsquid:S1854"6Remove this useless assignment to local variable "cb".(¢µ¤Åıÿÿÿÿ
+gsquid:CommentedOutCodeLine	"<This block of commented-out lines of code should be removed.(¹„º®úÿÿÿÿ
+Csquid:S1481"'Remove this unused "cb" local variable.(¢µ¤Åıÿÿÿÿ
