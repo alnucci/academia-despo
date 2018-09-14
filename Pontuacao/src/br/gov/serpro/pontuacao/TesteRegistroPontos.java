@@ -1,10 +1,8 @@
-package src.br.gov.serpro.pontuacao;
+package br.gov.serpro.pontuacao;
 
-import br.gov.serpro.pontuacao.CalculadoraBonus;
-import br.gov.serpro.pontuacao.RegistroPontos;
-import br.gov.serpro.pontuacao.Usuario;
-import org.junit.Test;
 import static org.junit.Assert.*;
+
+import org.junit.Test;
 
 // import static org.junit.Assert.*;
 
