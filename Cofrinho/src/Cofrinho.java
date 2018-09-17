@@ -8,14 +8,14 @@ public class Cofrinho {
     /**
      * Lista onde ficarão todas as moedas
      */
-    private List<Moeda> moedas = new ArrayList<>();
+    private List<br.gov.serpro.cofrinho.Moeda> moedas = new ArrayList<>();
 
     /**
      * Adiciona uma moeda ao cofrinho
      *
      * @param moeda
      */
-    public void adicionarMoeda(Moeda moeda) {
+    public void adicionarMoeda(br.gov.serpro.cofrinho.Moeda moeda) {
         moedas.add(moeda);
     }
 

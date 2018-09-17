@@ -5,14 +5,14 @@ public class Principal {
     public static void main(String[] args) {
 
 
-        Moeda moedaCincoCents = new Moeda(ValorMoeda.CINCO_CENTAVOS);
-        Moeda moedaDezCents1 = new Moeda(ValorMoeda.DEZ_CENTAVOS);
-        Moeda moedaVinteCincoCents = new Moeda(ValorMoeda.VINTE_CINCO_CENTAVOS);
-        Moeda moedaCinquentaCents = new Moeda(ValorMoeda.CINQUENTA_CENTAVOS);
-        Moeda moedaUmReal = new Moeda(ValorMoeda.UM_REAL);
+        br.gov.serpro.cofrinho.Moeda moedaCincoCents = new br.gov.serpro.cofrinho.Moeda(br.gov.serpro.cofrinho.ValorMoeda.CINCO_CENTAVOS);
+        br.gov.serpro.cofrinho.Moeda moedaDezCents1 = new br.gov.serpro.cofrinho.Moeda(br.gov.serpro.cofrinho.ValorMoeda.DEZ_CENTAVOS);
+        br.gov.serpro.cofrinho.Moeda moedaVinteCincoCents = new br.gov.serpro.cofrinho.Moeda(br.gov.serpro.cofrinho.ValorMoeda.VINTE_CINCO_CENTAVOS);
+        br.gov.serpro.cofrinho.Moeda moedaCinquentaCents = new br.gov.serpro.cofrinho.Moeda(br.gov.serpro.cofrinho.ValorMoeda.CINQUENTA_CENTAVOS);
+        br.gov.serpro.cofrinho.Moeda moedaUmReal = new br.gov.serpro.cofrinho.Moeda(br.gov.serpro.cofrinho.ValorMoeda.UM_REAL);
 
 
-        Cofrinho cofrinho = new Cofrinho();
+        br.gov.serpro.cofrinho.Cofrinho cofrinho = new br.gov.serpro.cofrinho.Cofrinho();
 
         cofrinho.adicionarMoeda(moedaCincoCents);
         cofrinho.adicionarMoeda(moedaDezCents1);
@@ -20,7 +20,7 @@ public class Principal {
         cofrinho.adicionarMoeda(moedaDezCents1);
         cofrinho.adicionarMoeda(moedaVinteCincoCents);
         cofrinho.adicionarMoeda(moedaCinquentaCents);
-        //cofrinho.adicionarMoeda(moedaUmReal);
+        cofrinho.adicionarMoeda(moedaUmReal);
 
         System.out.println("O cofre tem um total de " + cofrinho.calcularQuantidadeTotalMoedas() + " moedas.");
         System.out.println("O cofre tem um total de " + cofrinho.calcularQuantidadeTotalMoedas_NaoOtimizado() + " moedas(Não otimizado).");
