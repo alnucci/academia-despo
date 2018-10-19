@@ -1,3 +1,4 @@
+package controletv;
 
 public class TV {
 
@@ -15,19 +16,17 @@ public class TV {
 		this.canal = canais[posicaoCanal];
 	}
 
-	public int canalAtivo() {
+	public int aumentarCanais() {
+		this.canal = canais[posicaoCanal++];
 		return this.canal;
 	}
 
-	public void aumentarCanais() {
-		this.canal = canais[posicaoCanal++];
-	}
-
-	public void diminuirCanais() {
+	public int diminuirCanais() {
 		this.canal = canais[posicaoCanal--];
+		return this.canal;
 	}
 
-	public void escolherCanal(Integer canal) {
+	public int escolherCanal(Integer canal) {
 		for (int posicao = 0; posicao < canais.length; posicao++) {
 			if (canal == canais[posicao]) {
 				this.canal = canais[posicao];
@@ -35,6 +34,7 @@ public class TV {
 				break;
 			}
 		}
+		return this.canal;
 
 	}
 
