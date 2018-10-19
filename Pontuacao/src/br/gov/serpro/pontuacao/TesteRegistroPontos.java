@@ -1,14 +1,13 @@
 package br.gov.serpro.pontuacao;
 
-<<<<<<< HEAD
-=======
-import br.gov.serpro.pontuacao.CalculadoraBonus;
-import br.gov.serpro.pontuacao.RegistroPontos;
+//<<<<<<< HEAD
+// =======
+/*
 import org.junit.Test;
->>>>>>> refs/remotes/origin/master
-import static org.junit.Assert.*;
 
-import org.junit.Test;
+// import static org.junit.Assert.*;
+
+// >>>>>>> refs/remotes/origin/master
 
 // import static org.junit.Assert.*;
 
@@ -54,3 +53,4 @@ public class TesteRegistroPontos {
         assertEquals(u.pontos, 50);
     }
 }
+*/

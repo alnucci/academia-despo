@@ -1,9 +1,8 @@
 package br.gov.serpro.comercio;
+
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-
-
+/*
 public class TesteCompra  {
     @Test
 public void compraAVista(){
@@ -25,3 +24,4 @@ public void compraAVista(){
 
 
 }
+*/

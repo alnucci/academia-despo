@@ -1,11 +1,11 @@
-package main;
+package br.gov.serpro.comercio;
 public class Compra {
-	public static void main(String[] args){
+    public static void main(String[] args) {
 
-    int valorTotal;
-    int numeroParcelas;
-
-    // a vista
+        // int valorTotal;
+        // int numeroParcelas;
+/*
+        // a vista
     public Compra(int valor) {
         valorTotal = valor;
         numeroParcelas = 1;
@@ -30,6 +30,7 @@ public class Compra {
     public int getValorParcelas(){
         return valorTotal/numeroParcelas;
     }
-	}
+	} */
+    }
+
 }
-	
