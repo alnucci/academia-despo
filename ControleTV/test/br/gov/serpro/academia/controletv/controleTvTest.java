@@ -1,4 +1,4 @@
-br.gov.serpro.academia.controletv;
+package br.gov.serpro.academia.controletv;
 
 import static org.junit.Assert.*;
 
@@ -25,8 +25,8 @@ public class controleTvTest {
 			
 			TV tv = new TV(canais);
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
-			int canalMudado = controleRemoto.escolherCanal(1);
-			
+	//		int canalMudado = controleRemoto.escolherCanal(1);
+			controleRemoto.aumentarCanais();
 			int canalAumentado = controleRemoto.aumentarCanais();
 			assertEquals(5, canalAumentado);
 		}
@@ -37,7 +37,10 @@ public class controleTvTest {
 			
 			TV tv = new TV(canais);
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
-			int canalMudado = controleRemoto.escolherCanal(5);
+//			int canalMudado = controleRemoto.escolherCanal(5);
+//			controleRemoto.aumentarCanais();
+//			controleRemoto.aumentarCanais();
+
 			int canalDiminuido = controleRemoto.diminuirCanais();
 			assertEquals(1, canalDiminuido);
 		}
@@ -50,8 +53,9 @@ public class controleTvTest {
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
 			controleRemoto.aumentarVolume();
 			controleRemoto.aumentarVolume();
+			controleRemoto.aumentarVolume();
 			int volume = controleRemoto.aumentarVolume();
-			assertEquals(2, volume);
+			assertEquals(3, volume);
 			
 		}
 		
@@ -61,7 +65,11 @@ public class controleTvTest {
 			
 			TV tv = new TV(canais);
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
-			controleRemoto.diminuirVolume();
+			controleRemoto.aumentarVolume();
+			controleRemoto.aumentarVolume();
+			controleRemoto.aumentarVolume();
+			controleRemoto.aumentarVolume();
+
 			controleRemoto.diminuirVolume();
 			controleRemoto.diminuirVolume();
 			int volume = controleRemoto.diminuirVolume();
@@ -75,9 +83,8 @@ public class controleTvTest {
 			
 			TV tv = new TV(canais);
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
-			
-			int volume = controleRemoto.diminuirVolume(5);
-			assertEquals(true, controleRemoto.ligarDesligar(true));
+			//controleRemoto.ligarDesligar();
+			assertEquals(true, controleRemoto.ligarDesligar());
 			
 		}
 		
@@ -88,7 +95,7 @@ public class controleTvTest {
 			TV tv = new TV(canais);
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
 			controleRemoto.ligarDesligar();
-			int volume = controleRemoto.diminuirVolume(3);
+			
 			assertEquals(false, controleRemoto.ligarDesligar());
 			
 		}
