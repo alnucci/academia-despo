@@ -30,8 +30,7 @@ public class controleTvTest {
 			int canalAumentado = controleRemoto.aumentarCanais();
 			assertEquals(5, canalAumentado);
 		}
-		
-		
+			
 		@Test
 		public void testDiminuirCanais() {
 			Integer[] canais = {1,5,6,8,9,10,11,12,13};
@@ -43,9 +42,6 @@ public class controleTvTest {
 			assertEquals(1, canalDiminuido);
 		}
 		
-		
-		
-		
 		@Test
 		public void testAumentarVolume() {
 			Integer[] canais = {1,3,5,6,7,8,9,10,11,12,13};
@@ -55,15 +51,14 @@ public class controleTvTest {
 			controleRemoto.aumentarVolume(volume1++);
 			controleRemoto.aumentarVolume(volume1++);
 			int volume = controleRemoto.aumentarVolume(volume1);
-			assertEquals(3, volume);
+			assertEquals(2, volume);
 			
 		}
-		
 		
 		@Test
 		public void testBaixarVolume() {
 			Integer[] canais = {1,3,5,6,7,8,9,10,11,12,13};
-			int volume1 = 5;
+			int volume1 = 10;
 
 			TV tv = new TV(canais);
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
@@ -74,7 +69,6 @@ public class controleTvTest {
 			assertEquals(2, volume);
 			
 		}
-		
 		
 		@Test
 		public void testLigarTv() {
@@ -102,7 +96,3 @@ public class controleTvTest {
 
 
 	}
-
-	
-	
-}

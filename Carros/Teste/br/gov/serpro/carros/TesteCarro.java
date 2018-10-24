@@ -1,5 +1,5 @@
 package br.gov.serpro.carros;
-
+/*
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -40,5 +40,6 @@ class TesteCarro {
 		c.frear();
 		assertEquals(0,c.getVelocidade());
 	}
+	}
+*/
 
-}
