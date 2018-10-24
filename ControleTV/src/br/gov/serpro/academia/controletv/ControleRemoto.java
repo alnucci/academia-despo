@@ -1,4 +1,4 @@
-package controletv;
+package br.gov.serpro.academia.controletv;
 
 public class ControleRemoto {
 		
@@ -21,12 +21,12 @@ public class ControleRemoto {
 			return tv.diminuirCanais();
 		}
 		
-		public int aumentarVolume(int volume) {
-			return tv.aumentarVolume(volume);
+		public int aumentarVolume() {
+			return tv.aumentarVolume();
 		}
 
-		public int diminuirVolume(int volume) {
-			return tv.diminuirVolume(volume);
+		public int diminuirVolume() {
+			return tv.diminuirVolume();
 		}
 		
 		public void ligarDesligar() {

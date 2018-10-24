@@ -1,11 +1,11 @@
-package testtv;
+br.gov.serpro.academia.controletv;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import controletv.ControleRemoto;
-import controletv.TV;
+import br.gov.serpro.academia.controletv.ControleRemoto;
+import br.gov.serpro.academia.controletv.TV;
 
 public class controleTvTest {
 
@@ -45,12 +45,12 @@ public class controleTvTest {
 		@Test
 		public void testAumentarVolume() {
 			Integer[] canais = {1,3,5,6,7,8,9,10,11,12,13};
-			int volume1 = 0;
+			
 			TV tv = new TV(canais);
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
-			controleRemoto.aumentarVolume(volume1++);
-			controleRemoto.aumentarVolume(volume1++);
-			int volume = controleRemoto.aumentarVolume(volume1);
+			controleRemoto.aumentarVolume();
+			controleRemoto.aumentarVolume();
+			int volume = controleRemoto.aumentarVolume();
 			assertEquals(2, volume);
 			
 		}
@@ -58,14 +58,13 @@ public class controleTvTest {
 		@Test
 		public void testBaixarVolume() {
 			Integer[] canais = {1,3,5,6,7,8,9,10,11,12,13};
-			int volume1 = 10;
-
+			
 			TV tv = new TV(canais);
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
-			controleRemoto.diminuirVolume(volume1--);
-			controleRemoto.diminuirVolume(volume1--);
-			controleRemoto.diminuirVolume(volume1--);
-			int volume = controleRemoto.diminuirVolume(volume1);
+			controleRemoto.diminuirVolume();
+			controleRemoto.diminuirVolume();
+			controleRemoto.diminuirVolume();
+			int volume = controleRemoto.diminuirVolume();
 			assertEquals(2, volume);
 			
 		}

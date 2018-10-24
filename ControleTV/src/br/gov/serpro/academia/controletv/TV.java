@@ -1,4 +1,4 @@
-package controletv;
+package br.gov.serpro.academia.controletv;
 
 public class TV {
 
@@ -38,7 +38,7 @@ public class TV {
 
 	}
 
-	public int aumentarVolume(int volume) {
+	public int aumentarVolume() {
 		if (this.volume < VOLUME_MAXIMO) {
 			return this.volume++;
 		} else {
@@ -46,7 +46,7 @@ public class TV {
 		}
 	}
 
-	public int diminuirVolume(int volume) {
+	public int diminuirVolume() {
 		if (this.volume > VOLUME_MINIMO) {
 			return this.volume--;
 		} else {
