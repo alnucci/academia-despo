@@ -20,26 +20,26 @@ public class controleTvTest {
 		}
 		
 		@Test
-		public void testAumentarCanal() {
-			int[] canais = {1,5,6,8,9,10,11,12,13};
+		public void testAumentarCanais() {
+			Integer[] canais = {1,5,6,8,9,10,11,12,13};
 			
-			Tv tv = new Tv(canais);
+			TV tv = new TV(canais);
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
-			int canalMudado = controleRemoto.mudarCanal(1);
+			int canalMudado = controleRemoto.escolherCanal(1);
 			
-			int canalAumentado = controleRemoto.aumentarCanal();
+			int canalAumentado = controleRemoto.aumentarCanais();
 			assertEquals(5, canalAumentado);
 		}
 		
 		
 		@Test
-		public void testDiminuirCanal() {
-			int[] canais = {1,5,6,8,9,10,11,12,13};
+		public void testDiminuirCanais() {
+			Integer[] canais = {1,5,6,8,9,10,11,12,13};
 			
-			Tv tv = new Tv(canais);
+			TV tv = new TV(canais);
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
-			int canalMudado = controleRemoto.mudarCanal(5);
-			int canalDiminuido = controleRemoto.diminuirCanal();
+			int canalMudado = controleRemoto.escolherCanal(5);
+			int canalDiminuido = controleRemoto.diminuirCanais();
 			assertEquals(1, canalDiminuido);
 		}
 		
@@ -48,13 +48,13 @@ public class controleTvTest {
 		
 		@Test
 		public void testAumentarVolume() {
-			int[] canais = {1,3,5,6,7,8,9,10,11,12,13};
-			
-			Tv tv = new Tv(canais);
+			Integer[] canais = {1,3,5,6,7,8,9,10,11,12,13};
+			int volume1 = 0;
+			TV tv = new TV(canais);
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
-			controleRemoto.aumentarVolume();
-			controleRemoto.aumentarVolume();
-			int volume = controleRemoto.aumentarVolume();
+			controleRemoto.aumentarVolume(volume1++);
+			controleRemoto.aumentarVolume(volume1++);
+			int volume = controleRemoto.aumentarVolume(volume1);
 			assertEquals(3, volume);
 			
 		}
@@ -62,14 +62,15 @@ public class controleTvTest {
 		
 		@Test
 		public void testBaixarVolume() {
-			int[] canais = {1,3,5,6,7,8,9,10,11,12,13};
-			
-			Tv tv = new Tv(canais);
+			Integer[] canais = {1,3,5,6,7,8,9,10,11,12,13};
+			int volume1 = 5;
+
+			TV tv = new TV(canais);
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
-			controleRemoto.aumentarVolume();
-			controleRemoto.aumentarVolume();
-			controleRemoto.aumentarVolume();
-			int volume = controleRemoto.baixarVolume();
+			controleRemoto.diminuirVolume(volume1--);
+			controleRemoto.diminuirVolume(volume1--);
+			controleRemoto.diminuirVolume(volume1--);
+			int volume = controleRemoto.diminuirVolume(volume1);
 			assertEquals(2, volume);
 			
 		}
@@ -77,25 +78,25 @@ public class controleTvTest {
 		
 		@Test
 		public void testLigarTv() {
-			int[] canais = {1,3,5,6,7,8,9,10,11,12,13};
+			Integer[] canais = {1,3,5,6,7,8,9,10,11,12,13};
 			
-			Tv tv = new Tv(canais);
+			TV tv = new TV(canais);
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
 			
-			int volume = controleRemoto.baixarVolume();
-			assertEquals(true, controleRemoto.ligar());
+			int volume = controleRemoto.diminuirVolume(5);
+			assertEquals(true, controleRemoto.ligarDesligar());
 			
 		}
 		
 		@Test
 		public void testLigarDesligarTv() {
-			int[] canais = {1,3,5,6,7,8,9,10,11,12,13};
+			Integer[] canais = {1,3,5,6,7,8,9,10,11,12,13};
 			
-			Tv tv = new Tv(canais);
+			TV tv = new TV(canais);
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
-			controleRemoto.ligar();
-			int volume = controleRemoto.baixarVolume();
-			assertEquals(false, controleRemoto.desligar());
+			controleRemoto.ligarDesligar();
+			int volume = controleRemoto.diminuirVolume(3);
+			assertEquals(false, controleRemoto.ligarDesligar());
 			
 		}
 

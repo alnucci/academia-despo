@@ -17,16 +17,16 @@ public class ControleRemoto {
 			return tv.aumentarCanais();
 		}
 		
-		public void diminuirCanais() {
-			tv.diminuirCanais();
+		public int diminuirCanais() {
+			return tv.diminuirCanais();
 		}
 		
-		public void aumentarVolume() {
-			 tv.aumentarVolume();
+		public int aumentarVolume(int volume) {
+			return tv.aumentarVolume(volume);
 		}
 
-		public void diminuirVolume() {
-			 tv.diminuirVolume();
+		public int diminuirVolume(int volume) {
+			return tv.diminuirVolume(volume);
 		}
 		
 		public void ligarDesligar() {

@@ -38,19 +38,19 @@ public class TV {
 
 	}
 
-	public void aumentarVolume() {
+	public int aumentarVolume(int volume) {
 		if (this.volume < VOLUME_MAXIMO) {
-			this.volume++;
+			return this.volume++;
 		} else {
-			this.volume = VOLUME_MAXIMO;
+			return this.volume = VOLUME_MAXIMO;
 		}
 	}
 
-	public void diminuirVolume() {
+	public int diminuirVolume(int volume) {
 		if (this.volume > VOLUME_MINIMO) {
-			this.volume--;
+			return this.volume--;
 		} else {
-			this.volume = VOLUME_MINIMO;
+			return this.volume = VOLUME_MINIMO;
 		}
 	}
 	
