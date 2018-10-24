@@ -84,7 +84,7 @@ public class controleTvTest {
 			ControleRemoto controleRemoto = new ControleRemoto(tv);
 			
 			int volume = controleRemoto.diminuirVolume(5);
-			assertEquals(true, controleRemoto.ligarDesligar());
+			assertEquals(true, controleRemoto.ligarDesligar(true));
 			
 		}
 		
