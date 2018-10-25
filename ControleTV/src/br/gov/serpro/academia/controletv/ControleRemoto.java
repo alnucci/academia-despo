@@ -2,13 +2,19 @@ package br.gov.serpro.academia.controletv;
 
 public class ControleRemoto {
 		
-		private TV tv;
-		
-		public ControleRemoto(TV tv) {
+//		private TV tv;
+	 	private Controlavel controlavel;
+
+/*		public ControleRemoto(TV tv) {
 			this.tv = tv;
 		}
+*/
+	public ControleRemoto(Controlavel controlavel) {
+		this.controlavel = controlavel;
+	}
 
-		public int escolherCanal(int canal) {
+
+	public int escolherCanal(int canal) {
 			return tv.escolherCanal(canal);
 	
 		}
