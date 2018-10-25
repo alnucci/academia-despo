@@ -29,8 +29,8 @@ public class ControleRemoto {
 			return tv.diminuirVolume();
 		}
 		
-		public void ligarDesligar() {
-			 tv.ligarDesligar();
+		public boolean ligarDesligar() {
+			return tv.ligarDesligar();
 		}
 
 }

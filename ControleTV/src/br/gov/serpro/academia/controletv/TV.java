@@ -1,6 +1,6 @@
 package br.gov.serpro.academia.controletv;
 
-public class TV {
+public class TV implements Controlavel {
 
 	private static final int VOLUME_MINIMO = 0;
 	private static final int VOLUME_MAXIMO = 50;
@@ -54,8 +54,9 @@ public class TV {
 		}
 	}
 	
-	public void ligarDesligar(){
-		ligada = !ligada;
+	public boolean ligarDesligar(){
+		return ligada = !ligada;
+
 	}
 
 }
