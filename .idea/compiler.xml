@@ -23,11 +23,13 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="calculadoraIMC" />
+        <module name="Contacorrente" />
         <module name="Pizzaria" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="calculadoraIMC" target="1.5" />
+      <module name="Contacorrente" target="1.5" />
       <module name="Pizzaria" target="1.8" />
     </bytecodeTargetLevel>
   </component>

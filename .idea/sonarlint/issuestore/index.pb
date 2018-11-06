@@ -9,11 +9,9 @@ F
 calculadoraIMC/pom.xml,2/f/2fde1abc080ec7f9aac50d1395365d27bb15f383
 Q
 !calculadoraIMC/calculadoraIMC.iml,f/8/f8ac45cb06e56c597eee0265dcb6908230634770
-P
- CaculadoraIMC/src/Principal.java,c/3/c332ea0ccd8ba08b4c5c15bb8c2114d6d0459380
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
-O
-CaculadoraIMC/src/Paciente.java,6/0/60ebebdf187b24d8fd4d299eec5aa3f5457a7836
 n
 >Pontuacao/src/br/gov/serpro/pontuacao/TesteRegistroPontos.java,a/8/a84fde950c7df2c8dc543e395933214916a6013d
+u
+EControleTV/test/br/gov/serpro/academia/controletv/ControleTvTest.java,3/6/3607847f5414e8cd6ffa6c47ba7609b10326298c

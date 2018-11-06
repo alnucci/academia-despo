@@ -13,6 +13,10 @@
       <sourceFolder url="file://$MODULE_DIR$/ControleTV/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Comercio/src.br.gov.serpro.comercio;/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Comercio/src.br.gov.serpro.comercio;/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ControleTV/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ControleTV/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/MetodosAcessoData/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MetodosAcessoData/test" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
