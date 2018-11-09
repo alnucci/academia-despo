@@ -1,4 +1,4 @@
-
+package br.gov.serpro.conta;
 
 
 import org.junit.Test;

@@ -6,7 +6,7 @@ package br.gov.serpro.conta;
 public class ContaCorrenteRegular implements ContaCorrente {
 
     private double saldo;
-    private double taxa_juros = 5.0;
+    private double taxaJuros = 5.0;
 
     public void depositar(double valor) {
         this.saldo = saldo + valor;
@@ -17,6 +17,17 @@ public class ContaCorrenteRegular implements ContaCorrente {
     }
 
     public double calcularTaxaJuros() {
-        return taxa_juros;
+        return taxaJuros;
+    }
+
+    public void efetuarRetirada(double valor) {
+
+        if (valor <= this.saldo) {
+
+            this.saldo = this.saldo - valor;
+        }else {
+            throw new SaldoInsuficienteException("Saldo insuficiente");
+
+        }
     }
 }

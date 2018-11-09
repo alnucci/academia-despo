@@ -1,4 +1,4 @@
-package br.coursera;
+package br.gov.serpro.conta;
 
 
 
@@ -24,7 +24,7 @@ public class RetiradaContaCorrentePremiumTest {
         double valorSaldo = contaCorrente.obterSaldo();
         try {
             contaCorrente.efetuarRetirada(valorRetirada);
-        } catch (SaldoInsuficienteException exception) {a
+        } catch (SaldoInsuficienteException exception) {
             fail("Deveria permitir efetuar retirada com valor menor que saldo total");
         }
 
