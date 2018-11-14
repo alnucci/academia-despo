@@ -1,8 +1,8 @@
 
-public class ForaDoIntervaloException {
+public class ForaDoIntervaloException extends Exception {
 
-	public ForaDoIntervaloException() {
-		// TODO Auto-generated constructor stub
+	public ForaDoIntervaloException(String message) {
+		super("Valor fora do intervalo: " + message);
 	}
 
 }
