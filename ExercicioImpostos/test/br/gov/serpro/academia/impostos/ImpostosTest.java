@@ -13,7 +13,7 @@ public class ImpostosTest {
 	public void calculosImpostoDevemSerCorretos(){
 		List<Contribuinte> listaConstribuintes = new ArrayList<>();
 		List<Double> resultados = new ArrayList<>();
-		
+		//
 		listaConstribuintes.add(new PessoaFisica("Joao Santos",3000.00,"11111"));
 		listaConstribuintes.add(new PessoaJuridica("Lojas AA",150000.00,"10055"));
 		listaConstribuintes.add(new PessoaFisica("Maria Soares",5000.00,"22222"));
