@@ -22,7 +22,7 @@ public class RealizarSaqueTest {
         }
 
         // Then
-        assertEquals("50.0", contaCorrente.obterSaldo(), 0);
+        assertEquals(50.0, contaCorrente.obterSaldo(), 0);
     }
 /*
     @Test

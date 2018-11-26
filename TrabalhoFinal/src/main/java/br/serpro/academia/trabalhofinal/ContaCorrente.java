@@ -4,7 +4,7 @@ public interface ContaCorrente {
 
 	void efetuarRetirada(double d);
 
-	Object obterSaldo();
+    public double obterSaldo();
 
 	void depositar(double d);
 
