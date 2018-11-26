@@ -1,6 +1,6 @@
 package br.serpro.academia.trabalhofinal;
 
-
+import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
@@ -22,9 +22,9 @@ public class RealizarSaqueTest {
         }
 
         // Then
-        assertEquals(50.0, contaCorrente.obterSaldo(), 0);
+        assertEquals("50.0", contaCorrente.obterSaldo(), 0);
     }
-
+/*
     @Test
     public void devePermitirComValorIgualAoSaldoTotal() {
 
@@ -54,5 +54,5 @@ public class RealizarSaqueTest {
         contaCorrente.efetuarRetirada(50.01);
 
     }
-
+*/
 }
