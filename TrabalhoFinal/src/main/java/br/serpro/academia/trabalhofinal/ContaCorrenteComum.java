@@ -26,11 +26,5 @@ public class ContaCorrenteComum implements ContaCorrente {
 		   
 	}
 
-	public void realizarTransferencia(int contaOrigem, int contaDestino, double valor) {
-		// TODO realizar saque contaOrigem
-		
-		// TODO realizar deposito contaDestino
-		
-	}
 
 }

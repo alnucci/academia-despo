@@ -8,6 +8,4 @@ public interface ContaCorrente {
 
 	void depositar(double valor);
 	
-	void realizarTransferencia(int contaOrigem, int contaDestino, double valor);  //contaOrigem contaDestino valor
-
 }
