@@ -14,7 +14,7 @@ public interface Banco {
 	public void debitarConta(ContaCorrente contaCorrenteDebitada, BigDecimal valor) throws ContaInexistenteException,
 			SaldoInsuficienteException;
 
-	public void transferenciaContasMesmoBanco(ContaCorrente contaCorrenteDebitada,
+	public void transferenciaEntreContas(ContaCorrente contaCorrenteDebitada,
 										 ContaCorrente contaCorrenteCreditada,
 										 BigDecimal valor) throws ContaInexistenteException;
 
