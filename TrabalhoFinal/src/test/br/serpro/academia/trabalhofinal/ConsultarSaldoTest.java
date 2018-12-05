@@ -1,22 +1,26 @@
 package br.serpro.academia.trabalhofinal;
 
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
 
-public class ConsultarExtratoTest {
+public class ConsultarSaldoTest {
 
     @Test
-    public void devePermitirComValorMenorQueSaldoTotal() {
+    public void consultarSaldoComSucesso(Banco banco, ContaCorrente conta) {
+        contaCorrente = new ContaCorrente(166, 41050L, 400.00);
+
+    }
+/*
+        @Test
+    public void deveConsultarSaldoTotal() {
 
         // Given
-        ContaCorrente contaCorrente = new ContaCorrenteComum();
+        ContaCorrente contaCorrente = new ContaCorrente();
 
         // When
         contaCorrente.depositar(100.0);
 
         try {
-            contaCorrente.realizarSaque(50.0);
+            contaCorrente.realizarSaque(100.0);
         } catch (SaldoInsuficienteException exception) {
             fail("Deveria permitir efetuar retirada com valor menor que saldo total");
         }
@@ -24,7 +28,7 @@ public class ConsultarExtratoTest {
         // Then
         assertEquals(50.0, contaCorrente.consultarSaldo(), 0);
     }
-/*
+
     @Test
     public void devePermitirComValorIgualAoSaldoTotal() {
 
@@ -34,13 +38,13 @@ public class ConsultarExtratoTest {
         // When
         contaCorrente.depositar(100.0);
         try {
-            contaCorrente.efetuarRetirada(100.0);
+            contaCorrente.realizarSaque(100.0);
         } catch (SaldoInsuficienteException exception) {
             fail("Deveria permitir efetuar retirada com valor igual que saldo total");
         }
 
         // Then
-        assertEquals(0.0, contaCorrente.obterSaldo(), 0);
+        assertEquals(0.0, contaCorrente.consultarSaldo(), 0);
     }
 
     @Test(expected = SaldoInsuficienteException.class)
@@ -51,7 +55,7 @@ public class ConsultarExtratoTest {
 
         // When
         contaCorrente.depositar(50.0);
-        contaCorrente.efetuarRetirada(50.01);
+        contaCorrente.realizarSaque(50.01);
 
     }
 */

@@ -1,16 +1,16 @@
 package br.serpro.academia.trabalhofinal;
 
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+
 import static org.junit.Assert.fail;
 
-public class RealizarTransferenciaTest {
+public class RealizarSaqueTest {
 
     @Test
     public void devePermitirComValorMenorQueSaldoTotal() {
 
         // Given
-        ContaCorrente contaCorrente = new ContaCorrenteComum();
+        ContaCorrente contaCorrente = new ContaCorrente();
 
         // When
         contaCorrente.depositar(100.0);

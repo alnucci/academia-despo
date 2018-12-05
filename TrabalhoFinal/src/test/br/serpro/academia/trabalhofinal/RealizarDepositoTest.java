@@ -1,28 +1,19 @@
 package br.serpro.academia.trabalhofinal;
 
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-
-public class ConsultarSaldoTest {
-
+public class RealizarDepositoTest {
+/*
     @Test
-    public void deveConsultarSaldoTotal() {
+    public void deveRealizarDeposito() {
 
         // Given
-        ContaCorrente contaCorrente = new ContaCorrenteComum();
+        ContaCorrente contaCorrente = new ContaCorrente();
 
         // When
-        contaCorrente.depositar(100.0);
+        //contaCorrente. (100.0);
 
-        try {
-            contaCorrente.realizarSaque(50.0);
-        } catch (SaldoInsuficienteException exception) {
-            fail("Deveria permitir efetuar retirada com valor menor que saldo total");
-        }
-
+       
         // Then
-        assertEquals(50.0, contaCorrente.consultarSaldo(), 0);
+        assertEquals(100.0, contaCorrente.consultarSaldo(), 0);
     }
 
     @Test
@@ -54,5 +45,5 @@ public class ConsultarSaldoTest {
         contaCorrente.realizarSaque(50.01);
 
     }
-
+*/
 }
