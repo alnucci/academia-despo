@@ -1,11 +1,13 @@
-package br.serpro.academia.trabalhofinal;
+package br.serpro.academia.trabalhofinal.banco;
 
 
-public class ContaCorrente {
+import java.util.Date;
+
+public interface ContaCorrente {
 
 	private Integer agencia;
 	private Long conta;
-	private double saldo;
+	private Double saldo;
 
 
 	public ContaCorrente(Integer agencia, Long conta, Double saldo){

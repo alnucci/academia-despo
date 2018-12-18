@@ -1,5 +1,7 @@
 package br.serpro.academia.trabalhofinal;
 
+import br.serpro.academia.trabalhofinal.banco.Banco;
+import br.serpro.academia.trabalhofinal.banco.ContaCorrente;
 import org.junit.Test;
 
 public class ConsultarSaldoTest {

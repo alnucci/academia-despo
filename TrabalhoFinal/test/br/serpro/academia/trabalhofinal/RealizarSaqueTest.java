@@ -1,5 +1,7 @@
 package br.serpro.academia.trabalhofinal;
 
+import br.serpro.academia.trabalhofinal.banco.ContaCorrente;
+import br.serpro.academia.trabalhofinal.excecoes.SaldoInsuficienteException;
 import org.junit.Test;
 
 import static org.junit.Assert.fail;

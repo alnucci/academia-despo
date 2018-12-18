@@ -1,4 +1,4 @@
-package br.serpro.academia.trabalhofinal;
+package br.serpro.academia.trabalhofinal.excecoes;
 
 public class ContaInexistenteException extends Exception {
 	 private static final long serialVersionUID = 1L;

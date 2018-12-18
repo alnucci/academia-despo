@@ -1,9 +1,14 @@
-package br.serpro.academia.trabalhofinal;
+package br.serpro.academia.trabalhofinal.banco;
+
+import br.serpro.academia.trabalhofinal.excecoes.ContaInexistenteException;
+import br.serpro.academia.trabalhofinal.excecoes.SaldoInsuficienteException;
 
 import java.math.BigDecimal;
 import java.util.List;
 
 public interface Banco {
+
+	public String getNome();
 
 	public List<Transacao> consultarExtrato(ContaCorrente contaCorrente) throws ContaInexistenteException;
 
