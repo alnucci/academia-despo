@@ -1,10 +1,10 @@
 package br.serpro.academia.trabalhofinal.caixa24h;
 
+import br.serpro.academia.trabalhofinal.banco.Banco;
+import br.serpro.academia.trabalhofinal.banco.ContaCorrente;
 import br.serpro.academia.trabalhofinal.banco.Transacao;
 import br.serpro.academia.trabalhofinal.excecoes.ContaInexistenteException;
 import br.serpro.academia.trabalhofinal.excecoes.SaldoInsuficienteException;
-import br.serpro.academia.trabalhofinal.banco.Banco;
-import br.serpro.academia.trabalhofinal.banco.ContaCorrente;
 
 import java.math.BigDecimal;
 import java.util.List;

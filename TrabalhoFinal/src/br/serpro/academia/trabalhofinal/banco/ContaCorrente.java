@@ -1,8 +1,6 @@
 package br.serpro.academia.trabalhofinal.banco;
 
 
-import java.util.Date;
-
 public interface ContaCorrente {
 
 	private Integer agencia;
