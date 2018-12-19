@@ -1,10 +1,10 @@
-package br.serpro.academia.trabalhofinal.caixa24h;
+package br.gov.serpro.academia.trabalhofinal.caixa24h;
 
-import br.serpro.academia.trabalhofinal.banco.Banco;
-import br.serpro.academia.trabalhofinal.banco.ContaCorrente;
-import br.serpro.academia.trabalhofinal.banco.Transacao;
-import br.serpro.academia.trabalhofinal.excecoes.ContaInexistenteException;
-import br.serpro.academia.trabalhofinal.excecoes.SaldoInsuficienteException;
+import br.gov.serpro.academia.trabalhofinal.banco.Banco;
+import br.gov.serpro.academia.trabalhofinal.banco.ContaCorrente;
+import br.gov.serpro.academia.trabalhofinal.banco.Transacao;
+import br.gov.serpro.academia.trabalhofinal.excecoes.ContaInexistenteException;
+import br.gov.serpro.academia.trabalhofinal.excecoes.SaldoInsuficienteException;
 
 import java.math.BigDecimal;
 import java.util.List;

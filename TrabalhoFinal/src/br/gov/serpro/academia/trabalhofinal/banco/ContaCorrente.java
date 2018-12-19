@@ -1,14 +1,13 @@
-package br.serpro.academia.trabalhofinal.banco;
+package br.gov.serpro.academia.trabalhofinal.banco;
 
 
-public interface ContaCorrente {
+public class ContaCorrente {
 
-	private Integer agencia;
-	private Long conta;
-	private Double saldo;
+	 Integer agencia;
+	 Long conta;
+	 Double saldo;
 
-
-	public ContaCorrente(Integer agencia, Long conta, Double saldo){
+	public ContaCorrente(Integer agencia, Long conta, Double saldo) {
 		this.agencia = agencia;
 		this.conta = conta;
 		this.saldo = saldo;

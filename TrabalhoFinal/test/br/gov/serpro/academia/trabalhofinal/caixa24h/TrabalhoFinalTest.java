@@ -1,4 +1,4 @@
-package br.serpro.academia.trabalhofinal;
+package br.gov.serpro.academia.trabalhofinal.caixa24h;
 
     /**
      * Parte 1

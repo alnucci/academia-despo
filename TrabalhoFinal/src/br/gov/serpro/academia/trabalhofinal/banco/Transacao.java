@@ -1,4 +1,4 @@
-package br.serpro.academia.trabalhofinal.banco;
+package br.gov.serpro.academia.trabalhofinal.banco;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

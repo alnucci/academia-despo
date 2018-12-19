@@ -1,10 +1,10 @@
-package br.serpro.academia.trabalhofinal.banco;
-
-import br.serpro.academia.trabalhofinal.excecoes.ContaInexistenteException;
-import br.serpro.academia.trabalhofinal.excecoes.SaldoInsuficienteException;
+package br.gov.serpro.academia.trabalhofinal.banco;
 
 import java.math.BigDecimal;
 import java.util.List;
+
+import br.gov.serpro.academia.trabalhofinal.excecoes.ContaInexistenteException;
+import br.gov.serpro.academia.trabalhofinal.excecoes.SaldoInsuficienteException;
 
 public interface Banco {
 
